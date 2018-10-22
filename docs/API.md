@@ -616,3 +616,21 @@ Response:
   }
 }
 ```
+### Supervisor version
+
+Added in supervisor v7.21.0
+
+This endpoint returns the supervisor version currently running the device api.
+
+From the user container:
+```
+$ curl "$BALENA_SUPERVISOR_ADDRESS/v2/version?apikey=$BALENA_SUPERVISOR_API_KEY"
+```
+
+Response:
+```json
+{
+	"status": "success",
+	"version": "v7.21.0"
+}
+```
